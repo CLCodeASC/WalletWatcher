@@ -49,21 +49,27 @@
      <main class="main-content">
        <form id="eventAdd">
             <h3>Expenses & Income</h3>
+
+            <div class="left-side-calendar">
             <select id="eventTitle" required>
             </select>
             <!--<input type="text" id="eventDesc" placeholder="Decription" required>-->
+            <div class="leftside">
             <input type="text" id="eventAmount" placeholder="Amount" required>
             <input type="date" id="eventDate" placeholder="Date" required>
-            
+            </div>
             <button type="submit">Add Expense</button>
+            </div>
         </form>
 
         <div class="right-column">
           <form id="eventReport">
             <h3>Analysis</h3>
+            <div class="right-side-calendar">
             <input type="date" id="startDate" placeholder="Start Date" required>
             <input type="date" id="endDate" placeholder="End Date">
             <button type="submit">Generate Report</button>
+            </div>
           </form>
 
           <div id="reportResults"></div>
